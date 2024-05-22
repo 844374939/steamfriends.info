@@ -11,7 +11,7 @@ if(isset($_GET['steamid']) && !empty($_GET['steamid']))
 
 if(!isset($_GET['steamid']) && empty($_GET['steamid']))
 {
-	$db = new mysqli('127.0.0.10', 'acn00269', 'acn00269', 'steamfriends-info.vercel.app');
+	$db = new mysqli('localhost', 'root', 'acn00269', 'database');
 	$db->set_charset('utf8mb4');
 	
 	$fetch = $db->query('SELECT * FROM user');
@@ -28,7 +28,7 @@ function check_friends($me)
 	
 	$apikey = array('F1EBD91557455C7FE68FF9E6C077AB0A');
 	
-	$db = new mysqli('127.0.0.10', 'acn00269', 'acn00269', 'steamfriends-info.vercel.app');
+	$db = new mysqli('localhost', 'root', 'acn00269', 'database');
 	$db->set_charset('utf8mb4');
 	
 	$me = $db->real_escape_string($me);
