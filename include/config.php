@@ -26,7 +26,7 @@ function get_client_ip()
     return $ipaddress;
 }
 
-$admins = array('765XXXXXXXXXXXXX');
+$admins = array('76561198162557489');
 
 $version = 13;
 $version = sha1('v'.$version);
