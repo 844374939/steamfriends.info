@@ -3,7 +3,7 @@ session_start();
 
 date_default_timezone_set('UTC');
 
-$db = new mysqli('localhost', 'user', 'password', 'database');
+$db = new mysqli('127.0.0.10', 'acn00269', 'acn00269', 'steamfriends-info.vercel.app');
 $db->set_charset('utf8mb4');
 
 function get_client_ip()
