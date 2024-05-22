@@ -3,7 +3,7 @@ require 'openid.php';
 
 $location = '/';
 
-$apikey = array('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
+$apikey = array('F1EBD91557455C7FE68FF9E6C077AB0A');
 
 if(isset($_GET['login']))
 {
